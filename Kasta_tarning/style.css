@@ -1,18 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-button{
+
+button {
     position: absolute;
     border: none;
+    background: none;
 }
-button:active{
-    transform: scale(1.1);
+
+.Kast{
+    animation-name: kast;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes kast {
+    0% {rotate: -2520deg;}
 }
